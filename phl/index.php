@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fretes PHL</title>
     <link rel="stylesheet" href="styles-global.css">
 </head>
 <body>
@@ -22,13 +22,14 @@
         </div>
         <div class="input-group">
             <label for="IDdistanciaKM">Distância em Kilometros:</label>
-            <input type="number" id="IDdistanciaKM" name="distânciaKM" required />
+            <input type="number" id="IDdistanciaKM" name="distanciaKM" required />
         </div>
         <div class="input-group">
             <label for="IDpedagio">Quantidade de Pedágios:</label>
             <input type="number" id="IDpedagio" name="pedagio" required />
         </div>
         <button>Consultar</button>
+        <button type="reset">LIMPAR</button>
     </form>
 </body>
 </html>
