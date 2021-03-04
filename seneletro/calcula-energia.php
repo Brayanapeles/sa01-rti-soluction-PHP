@@ -4,7 +4,9 @@
     $consumoDeKwh = $_GET["consumokwh"];
     const COSUMO_BAIXO = 0.32;
     const CONSUMO_ALTO = 0.42;
-    $mensagemFeedback = "Obrigado por economizar!";
+    $mensagemFeedback = "(Obrigado por economizar!)";
+    $valorComConsumoBaixo = $consumoDeKwh + COSUMO_BAIXO;
+    $valorComConsumoAlto = $consumoDeKwh + CONSUMO_ALTO;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,22 +22,22 @@
     <?php
         if($consumoDeKwh > 120){
     ?>
-        <h1 style="color: red;">Consumo: <?= $consumoDeKwh ?></h1>
+        <h1 style="color: red;">Consumo: <?= $consumoDeKwh ?> killowats-hora</h1>
     <?php
         }else{
     ?>
-        <h1>Consumo: <?= $consumoDeKwh ?> (Obrigado por economizar!)</h1>
+        <h1>Consumo: <?= $consumoDeKwh ?> killowats-hora. <?= $mensagemFeedback ?></h1>
     <?php
         }
     ?>
     <?php
         if($consumoDeKwh > 120){
     ?>
-        <h1>Valor a pagar: R$ <em><?= $consumoDeKwh + CONSUMO_ALTO ?></em></h1>
+        <h1>Valor a pagar: R$ <em><?= $valorComConsumoAlto ?></em></h1>
     <?php
         }else{
     ?>
-        <h1>Valor a pagar: R$ <em><?= $consumoDeKwh + COSUMO_BAIXO ?></em></h1>
+        <h1>Valor a pagar: R$ <em><?= $valorComConsumoBaixo ?></em></h1>
     <?php
         }
     ?>
