@@ -14,7 +14,7 @@
             <label for="IDnomeFuncinario">
                 Nome do funcionário:
             </label>
-            <input type="text" name="nomeFuncionario" id="IDnomeFuncinario" required/>
+            <input type="text"  name="nomeFuncionario" id="IDnomeFuncinario" required/>
         </div>
         <div class="input-group">
             <label for="IDnomeFuncinario">

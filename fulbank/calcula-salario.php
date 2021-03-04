@@ -4,6 +4,9 @@
     $aumentoDezPorcento = $salarioDoFuncionario * 0.1;
     $aumentoVintePorcento = $salarioDoFuncionario * 0.2;
 
+    $salarioComAumentoDeDezPorcento = $salarioDoFuncionario + $aumentoDezPorcento;
+    $salarioComAumentoDeVintePorcento = $salarioDoFuncionario + $aumentoVintePorcento;
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -18,11 +21,11 @@
     <?php
         if($salarioDoFuncionario > 5000){
     ?>
-    <h1>Oª <?= $nomeDoFuncionario ?> passará a receber R$ <?= $salarioDoFuncionario + $aumentoDezPorcento ?></h1>
+    <h1>Oª <?= $nomeDoFuncionario ?> passará a receber R$ <?= $salarioComAumentoDeDezPorcento ?></h1>
     <?php
         }else{
     ?>
-        <h1>Oª <?= $nomeDoFuncionario ?> passará a receber R$<em> <?= $salarioDoFuncionario + $aumentoVintePorcento ?></em></h1>
+        <h1>Oª <?= $nomeDoFuncionario ?> passará a receber R$<em> <?= $salarioComAumentoDeVintePorcento ?></em></h1>
     <?php
         }
     ?>
